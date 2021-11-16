@@ -15,6 +15,11 @@ Camera::~Camera()
 {
 }
 
+void Camera::Update()
+{
+
+}
+
 void Camera::Position(float x, float y, float z)
 {
 	Position(Vector3(x, y, z));

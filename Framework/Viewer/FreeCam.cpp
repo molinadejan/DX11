@@ -38,6 +38,8 @@ void FreeCam::Update()
 		position += u * move * Time::Delta();
 	else if (Keyboard::Get()->Press('Q'))
 		position -= u * move * Time::Delta();
+
+	Position(position);
 }
 
 void FreeCam::Speed(float move, float rotation)

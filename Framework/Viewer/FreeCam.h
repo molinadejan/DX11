@@ -12,5 +12,7 @@ public:
 private:
 	float move;
 	float rotation;
+
+
 };
 
