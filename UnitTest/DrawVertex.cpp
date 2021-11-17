@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "DrawVertex.h"
+#include "Viewer/FreeCam.h"
 
 DrawVertex::DrawVertex()
 	: shader(NULL)
@@ -10,6 +11,8 @@ DrawVertex::DrawVertex()
 
 void DrawVertex::Initialize()
 {
+	((FreeCam*)Context::Get()->GetCamera())->Speed(40, 2);
+
 	shader = new Shader(L"004_Quad.fx");
 
 	vertexCount = (width + 1) * (height + 1);

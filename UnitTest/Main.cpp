@@ -1,11 +1,15 @@
 #include "stdafx.h"
 #include "Main.h"
+#include "DrawTexture.h"
 #include "Systems/Window.h"
 #include "DrawVertex.h"
+#include "DrawTexture.h"
+
 
 void Main::Initialize()
 {
-	Push(new DrawVertex());
+	//Push(new DrawVertex());
+	Push(new DrawTexture());
 }
 
 void Main::Ready()
